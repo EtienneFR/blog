@@ -1,0 +1,21 @@
+{
+  "title": "Etienne Dayre's blog",
+  "url": "https://example.com/",
+  "language": "en",
+  "description": "I am a web developer who share my evolution and experiences on this blog.",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://example.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://example.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Etienne Dayre",
+    "email": "contact@etienne-dayre.fr",
+    "url": "https://example.com/about-me/"
+  }
+}
