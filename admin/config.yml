@@ -43,6 +43,6 @@ collections:
           label: "Featured Image",
           name: "featuredImage",
           widget: "image",
-          default: "",
+          optional: true,
         }
       - { label: "Post Body", name: "body", widget: "markdown" }
