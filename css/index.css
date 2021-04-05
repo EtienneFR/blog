@@ -3,9 +3,12 @@
   --lightgray: #e0e0e0;
   --gray: #C0C0C0;
   --darkgray: #333;
+  --darkgraybody: #1E2427;
+  --darkgraynum: #7A7A7A;
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
+  --black: #0B0B0B;
 }
 
 /* Global stylesheet */
@@ -20,6 +23,10 @@ body {
   font-family: -apple-system, system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
+  color: white;
+  position: relative;
+  min-height: min-content;
+  background-color: var(--darkgraybody);
 }
 p:last-child {
   margin-bottom: 0;
@@ -34,10 +41,7 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
-}
-a[href]:visited {
-  color: var(--navy);
+  color: var(--white);
 }
 main {
   padding: 1rem;
@@ -46,7 +50,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1.5px inset var(--black);
 }
 header:after {
   content: "";
@@ -130,6 +134,10 @@ code {
   text-decoration: none;
 }
 
+.header-class {
+  background-color: rgb(39, 45, 48);
+}
+
 /* Nav */
 .nav {
   padding: 0;
@@ -171,7 +179,7 @@ code {
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
+  color: var(--darkgraynum);
 }
 .postlist-date {
   word-spacing: -0.5px;
@@ -217,15 +225,6 @@ a[href].post-tag:focus {
 }
 .postlist-item > .post-tag {
   align-self: center;
-}
-
-/* Warning */
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.warning ol:only-child {
-  margin: 0;
 }
 
 /* Direct Links / Markdown Headers */
