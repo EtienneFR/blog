@@ -12,6 +12,10 @@ templateClass: tmpl-post
 
 {{ content | safe }}
 
+{%- if featuredImage %} 
+<img src="{{ featuredImage }}" alt="featuredImage" class="article-image"/>
+{%- endif %}
+
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}
