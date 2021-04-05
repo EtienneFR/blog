@@ -39,10 +39,31 @@ collections:
           widget: "hidden",
           default: "layouts/post.njk",
         }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+  - name: "articles"
+    label: "Articles"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
       - {
-          label: "Featured Image",
-          name: "featuredImage",
-          widget: "image",
-          optional: true,
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "",
+          date_format: "YYYY-MM-DD",
+          time_format: "HH:mm",
+          format: "YYYY-MM-DD",
+          picker_utc: false,
         }
+      - { label: "Tags", name: "tags", widget: "list", default: ["article"] }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/post.njk",
+        }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Post Body", name: "body", widget: "markdown" }
