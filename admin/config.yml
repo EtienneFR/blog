@@ -14,11 +14,11 @@ media_folder: "_site/img"
 public_folder: "/img"
 
 collections:
-  - name: "posts" #The name of the collection and should match our posts.json file's tag
-    label: "Posts" #The name of the collection on the CMS itself
-    folder: "posts" #The folder that our blog posts will be loaded from and saved to
-    create: true #Tells the CMS that new posts can be created
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" #this sets the URL for the post
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -38,5 +38,11 @@ collections:
           name: "layout",
           widget: "hidden",
           default: "layouts/post.njk",
+        }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          default: "",
         }
       - { label: "Post Body", name: "body", widget: "markdown" }
