@@ -1,7 +1,7 @@
 ---
 title: Blog avec Eleventy et Netlify CMS
 description: Création de mon blog à l'aide d'Eleventy
-date: 2021-04-06
+date: 2021-04-07
 tags:
   - article
 layout: layouts/post.njk
