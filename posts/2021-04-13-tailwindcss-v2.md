@@ -1,6 +1,6 @@
 ---
 title: Tailwindcss V2
-description: Passage sur la version 2 du framework CSS Tailwind
+description: Passage sur la version 2 du framework TailwindCSS
 date: 2021-04-13
 tags:
   - article
